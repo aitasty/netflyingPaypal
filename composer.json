@@ -1,0 +1,29 @@
+{
+    "name": "netflying/paypal",
+    "description": "netflying paypal sdk",
+    "keywords": ["php-sdk","netflying-sdk"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "darkghost",
+            "homepage": "https://github.com/aitasty/netflying"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.0",
+        "netflying/payment": "*"
+    },
+    "require-dev": {
+    },
+    "autoload":{
+        "psr-4":{
+            "NetflyingPaypal\\":"src/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "NetflyingPaypalTest\\":"test/"
+        }
+    }
+}
