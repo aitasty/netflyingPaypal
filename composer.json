@@ -11,11 +11,12 @@
     ],
     "require": {
         "php": ">=7.1.0",
-        "netflying/payment": "1.1.4"
+        "netflying/payment": "1.2.1"
     },
     "autoload":{
         "psr-4":{
-            "Netflying\\Paypal\\":"src/"
+            "Netflying\\Paypal\\":"src/",
+            "Netflying\\PaypalTest\\":"test/"
         }
     },
     "autoload-dev":{
