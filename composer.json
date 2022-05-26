@@ -15,12 +15,12 @@
     },
     "autoload":{
         "psr-4":{
-            "NetflyingPaypal\\":"src/"
+            "Netflying\\Paypal\\":"src/"
         }
     },
     "autoload-dev":{
         "psr-4":{
-            "NetflyingPaypalTest\\":"test/"
+            "Netflying\\Paypal\\Test\\":"test/"
         }
     }
 }
