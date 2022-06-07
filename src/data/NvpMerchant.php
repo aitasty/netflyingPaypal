@@ -3,7 +3,7 @@
  * @Author: He bin 
  * @Date: 2022-01-26 15:15:22 
  * @Last Modified by: He.Bin
- * @Last Modified time: 2022-05-26 17:27:42
+ * @Last Modified time: 2022-05-31 10:46:14
  */
 
 namespace Netflying\Paypal\data;
@@ -22,20 +22,35 @@ class NvpMerchant extends Merchant
         'endpoint' => 'string',
         /**
          * 取到TOKEN后需要跳转到的链接
+         * 变量{$token}
          * live: https://www.paypal.com/webscr?cmd=_express-checkout&useraction=commit&token={$token}
          * sandbox: https://www.sandbox.paypal.com/webscr?cmd=_express-checkout&useraction=commit&token={$token}
          */
         'token_direct' => 'string',
-        //授权取消返回地址
+        //通知地址
+        'notify_url' => 'string',
+        //完成地址(成功或失败)
+        'complete_url' => 'string',
+        //支付成功 变量{$sn}
+        'return_url' => 'string',
+        //支付取消 变量{$sn}
+        'cancel_url' => 'string',
+        //授权取消返回地址 变量{$sn}
         'authorise_cancel_url' => 'string',
-        //授权成功进入页面
+        //授权成功进入页面 变量{$sn}
         'authorise_renturn_url' => 'string',
+        //是否显示站点名字
+        'band_name' => 'string',
     ];
     protected $apiDataNull = [
         'endpoint' => null,
         'token_direct' => null,
+        'notify_url' => null,
+        'complete_url' => null,
+        'return_url' => null,
+        'cancel_url' => null,
         'authorise_cancel_url' => null,
         'authorise_renturn_url' => null,
+        'band_name' => ''
     ];
-
 }
